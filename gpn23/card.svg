@@ -14,9 +14,9 @@
       </feComponentTransfer>
     </filter>
     <filter id="chromatic_aberration_foreground">
-      <feOffset in="SourceGraphic" result="pre-red" dx="-32" dy="16"/>
+      <feOffset in="SourceGraphic" result="pre-red" dx="-24" dy="12"/>
       <feOffset in="SourceGraphic" result="pre-green" dx="0" dy="0"/>
-      <feOffset in="SourceGraphic" result="pre-blue" dx="32" dy="-16"/>
+      <feOffset in="SourceGraphic" result="pre-blue" dx="24" dy="-12"/>
       <feColorMatrix type="matrix" in="pre-red" result="red" values="1 0 0 0 0&#xA;                                0 0 0 0 0&#xA;                                0 0 0 0 0&#xA;                                0 0 0 1 0"/>
       <feColorMatrix type="matrix" in="pre-green" result="green" values="0 0 0 0 0&#xA;                                0 1 0 0 0&#xA;                                0 0 0 0 0&#xA;                                0 0 0 1 0"/>
       <feColorMatrix type="matrix" in="pre-blue" result="blue" values="0 0 0 0 0&#xA;                                0 0 0 0 0&#xA;                                0 0 1 0 0&#xA;                                0 0 0 1 0"/>
