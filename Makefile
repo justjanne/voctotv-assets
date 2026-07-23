@@ -19,7 +19,7 @@ dist/%.png: $(TMPDIR)/%.png
 
 .DELETE_ON_ERROR:
 .SECONDEXPANSION:
-$(TMPDIR)/%.png: $$(*D)/card.svg
+$(TMPDIR)/%.png: $$(firstword $$(wildcard $$*.svg $$(*D)/card.svg))
 	mkdir -p $(@D)
 	inkscape \
 		--export-area-page \
