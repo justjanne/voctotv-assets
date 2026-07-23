@@ -1,0 +1,14 @@
+<svg viewBox="0 0 3840 2160" version="1.1" xmlns="http://www.w3.org/2000/svg" image-rendering="optimizeQuality">
+  <defs>
+    <radialGradient id="overlayLeft" cx="0" cy="1" r="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="overlayRight" cx="1" cy="1" r="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect fill="url(#overlayRight)" width="3840" height="2160"/>
+  <rect fill="url(#overlayLeft)" width="2160" height="2160"/>
+</svg>
