@@ -1,0 +1,294 @@
+<svg version="1.1" viewBox="0 0 3840 2160" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <filter id="glow" x="-.2025" y="-.3325" width="1.405" height="1.665" color-interpolation-filters="sRGB">
+            <feGaussianBlur in="SourceGraphic" result="glow1" stdDeviation="12"/>
+            <feGaussianBlur in="SourceGraphic" result="glow2" stdDeviation="24"/>
+            <feGaussianBlur in="SourceGraphic" result="glow3" stdDeviation="48"/>
+
+            <feComponentTransfer in="SourceGraphic" result="neon_dark">
+                <feFuncR exponent="2.8" type="gamma"/>
+                <feFuncG exponent="2.8" type="gamma"/>
+                <feFuncB exponent="2.8" type="gamma"/>
+            </feComponentTransfer>
+            <feComponentTransfer in="SourceGraphic" result="neon_bright">
+                <feFuncR exponent="0.4" type="gamma"/>
+                <feFuncG exponent="0.4" type="gamma"/>
+                <feFuncB exponent="0.4" type="gamma"/>
+            </feComponentTransfer>
+
+            <feGaussianBlur in="neon_bright" result="neon_bright" stdDeviation="4"/>
+            <feComposite in="neon_bright" in2="SourceAlpha" operator="in" result="neon_bright"/>
+
+            <feMerge>
+                <feMergeNode in="glow1"/>
+                <feMergeNode in="glow2"/>
+                <feMergeNode in="glow3"/>
+                <feMergeNode in="neon_dark"/>
+                <feMergeNode in="neon_bright"/>
+            </feMerge>
+        </filter>
+
+        <linearGradient id="gradientBackground" x1="0" y1="0" x2="1" y2="0">
+            <stop stop-color="#b03bbf" offset="0"/>
+            <stop stop-color="#8a37be" offset=".2"/>
+            <stop stop-color="#5433be" offset="1"/>
+        </linearGradient>
+        <linearGradient id="gradientMask1" x1="0" y1="0" x2="0" y2="1">
+            <stop stop-color="#000000" stop-opacity="0" offset="0"/>
+            <stop stop-color="#000000" stop-opacity="1" offset="1"/>
+        </linearGradient>
+        <linearGradient id="gradientMask2" x1="1" y1="0" x2="0" y2="1">
+            <stop stop-color="#000000" stop-opacity="0" offset=".5"/>
+            <stop stop-color="#000000" stop-opacity=".25" offset=".65"/>
+            <stop stop-color="#000000" stop-opacity=".4" offset="1"/>
+        </linearGradient>
+
+        <circle id="confetti1" cx="-92.96" cy="114.3" r=".5404" fill="#5433be"/>
+        <circle id="confetti2" cx="-93.82" cy="115.5" r=".5404" fill="#fffb97"/>
+        <circle id="confetti3" cx="-93.82" cy="115.5" r=".5404" fill="#fffb97"/>
+        <circle id="confetti4" cx="-94.33" cy="114" r=".5404" fill="#f35e96"/>
+        <circle id="confetti5" cx="-93.82" cy="115.5" r=".5404" fill="#fffb97"/>
+        <path id="confetti6" d="m89.74 118.6-.01197.3795.3058.225-.3646.1059-.1195.3604-.2134-.3141-.3798-.002.2328-.3-.1152-.3618.3573.1287z" fill="#b03bbf"/>
+        <path id="confetti7" d="m91.07 118.2-.01198.3795.3058.225-.3646.1059-.1195.3604-.2134-.3141-.3798-.002.2328-.3-.1152-.3618.3573.1287z" fill="#fffb97"/>
+    </defs>
+
+    <rect width="3840" height="2160" fill="url(#gradientBackground)"/>
+    <rect width="3840" height="2160" fill="url(#gradientMask1)"/>
+    <rect width="3840" height="2160" fill="url(#gradientMask2)"/>
+
+    <g opacity=".28">
+        <use transform="matrix(34.58 0 0 34.58 4577 -2155)" href="#confetti1"/>
+        <use transform="matrix(27.16 0 0 27.16 5396 -1343)" href="#confetti4"/>
+        <use transform="matrix(27.59 0 0 27.59 5087 -1142)" href="#confetti1"/>
+        <use transform="matrix(24.57 0 0 24.57 5596 -975)" href="#confetti4"/>
+        <use transform="matrix(32.11 0 0 32.11 5042 -1829)" href="#confetti5"/>
+        <use transform="matrix(36.7 0 0 36.7 4602 -3006)" href="#confetti3"/>
+        <use transform="matrix(30.46 0 0 30.46 5211 -2124)" href="#confetti2"/>
+        <use transform="matrix(25.27 0 0 25.27 5858 -2468)" href="#confetti4"/>
+        <use transform="matrix(24.75 0 0 24.75 6011 -2483)" href="#confetti3"/>
+        <use transform="matrix(28.05 0 0 28.05 5413 -2233)" href="#confetti3"/>
+        <use transform="matrix(29.59 0 0 29.59 5028 -2316)" href="#confetti1"/>
+        <use transform="matrix(35.36 0 0 35.36 4378 -2670)" href="#confetti2"/>
+        <use transform="matrix(27.62 0 0 27.62 4727 -1827)" href="#confetti2"/>
+        <use transform="matrix(29.55 0 0 29.55 4749 -2007)" href="#confetti5"/>
+        <use transform="matrix(26.52 0 0 26.52 4840 -1836)" href="#confetti3"/>
+        <use transform="matrix(21.95 0 0 21.95 5240 -758.2)" href="#confetti3"/>
+        <use transform="matrix(25.76 0 0 25.76 4351 -1333)" href="#confetti5"/>
+        <use transform="matrix(20.75 0 0 20.75 5001 -746.2)" href="#confetti4"/>
+        <use transform="matrix(26.96 0 0 26.96 4557 -1708)" href="#confetti3"/>
+        <use transform="matrix(18.4 0 0 18.4 5058 -580.1)" href="#confetti1"/>
+        <use transform="matrix(21.06 0 0 21.06 5005 -634.5)" href="#confetti4"/>
+        <use transform="matrix(14.17 0 0 14.17 4988 -251.6)" href="#confetti4"/>
+        <use transform="matrix(16.16 0 0 16.16 4676 -526.9)" href="#confetti4"/>
+        <use transform="matrix(23.14 0 0 23.14 4407 -1322)" href="#confetti5"/>
+        <use transform="matrix(31.68 0 0 31.68 3263 -2207)" href="#confetti4"/>
+        <use transform="matrix(29.33 0 0 29.33 2725 -2328)" href="#confetti5"/>
+        <use transform="matrix(13.47 0 0 13.47 4612 -558.3)" href="#confetti3"/>
+        <use transform="matrix(10.62 0 0 10.62 4712 -252)" href="#confetti2"/>
+        <use transform="matrix(27.1 0 0 27.1 3456 -1780)" href="#confetti1"/>
+        <use transform="matrix(12.51 0 0 12.51 4386 -399)" href="#confetti5"/>
+        <use transform="matrix(19.03 0 0 19.03 3694 -1244)" href="#confetti1"/>
+        <use transform="matrix(27.22 0 0 27.22 2673 -1934)" href="#confetti4"/>
+        <use transform="matrix(27.06 0 0 27.06 2768 -1893)" href="#confetti3"/>
+        <use transform="matrix(15.94 0 0 15.94 2886 -654.9)" href="#confetti4"/>
+        <use transform="matrix(8.196 0 0 8.196 3524 280.5)" href="#confetti2"/>
+        <use transform="matrix(5.917 0 0 5.917 3876 555.8)" href="#confetti3"/>
+        <use transform="matrix(6.749 0 0 6.749 3470 646.2)" href="#confetti2"/>
+        <use transform="matrix(19.27 0 0 19.27 2138 -758.6)" href="#confetti1"/>
+        <use transform="matrix(18.1 0 0 18.1 2175 -986.3)" href="#confetti2"/>
+        <use transform="matrix(8.196 0 0 8.196 3291 324.4)" href="#confetti1"/>
+        <use transform="matrix(16.61 0 0 16.61 2178 -623.2)" href="#confetti6"/>
+        <use transform="matrix(7.013 0 0 7.013 2808 379.6)" href="#confetti3"/>
+        <use transform="matrix(17.87 0 0 17.87 1987 -527.6)" href="#confetti7"/>
+        <use transform="matrix(29.12 0 0 29.12 1119 -2011)" href="#confetti6"/>
+        <use transform="matrix(6.568 0 0 6.568 3131 373.9)" href="#confetti1"/>
+        <use transform="matrix(21.66 0 0 21.66 1365 -1067)" href="#confetti7"/>
+        <use transform="matrix(5.995 0 0 5.995 3141 425.4)" href="#confetti4"/>
+        <use transform="matrix(23.33 0 0 23.33 1299 -1485)" href="#confetti6"/>
+        <use transform="matrix(12.62 0 0 12.62 2641 -49.44)" href="#confetti2"/>
+        <use transform="matrix(4.806 0 0 4.806 3343 980.9)" href="#confetti1"/>
+        <use transform="matrix(11.68 0 0 11.68 3632 493.6)" href="#confetti5"/>
+        <use transform="matrix(19.12 0 0 19.12 2697 -99.73)" href="#confetti3"/>
+        <use transform="matrix(23.68 0 0 23.68 2337 -735.9)" href="#confetti2"/>
+        <use transform="matrix(18.69 0 0 18.69 2899 -42.85)" href="#confetti1"/>
+        <use transform="matrix(5.039 0 0 5.039 4289 1199)" href="#confetti5"/>
+        <use transform="matrix(11.7 0 0 11.7 3891 799.7)" href="#confetti2"/>
+        <use transform="matrix(22.98 0 0 22.98 3169 -708.5)" href="#confetti5"/>
+        <use transform="matrix(27.12 0 0 27.12 2755 -1043)" href="#confetti3"/>
+        <use transform="matrix(15.66 0 0 15.66 3568 75.65)" href="#confetti5"/>
+        <use transform="matrix(23.43 0 0 23.43 3248 -1032)" href="#confetti1"/>
+        <use transform="matrix(14.72 0 0 14.72 4025 245.3)" href="#confetti5"/>
+        <use transform="matrix(16.14 0 0 16.14 4099 -320)" href="#confetti5"/>
+        <use transform="matrix(28.89 0 0 28.89 2948 -1320)" href="#confetti3"/>
+        <use transform="matrix(13.15 0 0 13.15 4949 480.8)" href="#confetti4"/>
+        <use transform="matrix(33.65 0 0 33.65 3155 -2132)" href="#confetti2"/>
+        <use transform="matrix(30.95 0 0 30.95 4765 -2738)" href="#confetti4"/>
+        <use transform="matrix(30.58 0 0 30.58 4604 -2526)" href="#confetti1"/>
+        <use transform="matrix(23.08 0 0 23.08 5716 -2139)" href="#confetti3"/>
+        <use transform="matrix(22.81 0 0 22.81 5947 -2093)" href="#confetti1"/>
+        <use transform="matrix(34.54 0 0 34.54 4572 -3460)" href="#confetti3"/>
+        <use transform="matrix(35.05 0 0 35.05 4558 -3192)" href="#confetti1"/>
+        <use transform="matrix(26.69 0 0 26.69 5732 -1479)" href="#confetti5"/>
+        <use transform="matrix(23.93 0 0 23.93 4472 -978.5)" href="#confetti5"/>
+        <use transform="matrix(33.94 0 0 33.94 3469 -1912)" href="#confetti3"/>
+        <use transform="matrix(21.06 0 0 21.06 4865 -532.7)" href="#confetti2"/>
+        <use transform="matrix(26.15 0 0 26.15 3609 -1397)" href="#confetti3"/>
+        <use transform="matrix(26.69 0 0 26.69 3436 -1221)" href="#confetti2"/>
+        <use transform="matrix(18.39 0 0 18.39 1378 -1171)" href="#confetti7"/>
+        <use transform="matrix(8.569 0 0 8.569 2519 182.6)" href="#confetti6"/>
+        <use transform="matrix(26.91 0 0 26.91 1373 -2524)" href="#confetti7"/>
+        <use transform="matrix(19.11 0 0 19.11 2021 -1372)" href="#confetti3"/>
+        <use transform="matrix(13.64 0 0 13.64 2872 -759)" href="#confetti1"/>
+        <use transform="matrix(21.84 0 0 21.84 2235 -2235)" href="#confetti4"/>
+        <use transform="matrix(18.29 0 0 18.29 2550 -1671)" href="#confetti1"/>
+        <use transform="matrix(21.66 0 0 21.66 2747 -2334)" href="#confetti5"/>
+        <use transform="matrix(21.78 0 0 21.78 3055 -2077)" href="#confetti3"/>
+        <use transform="matrix(21.27 0 0 21.27 4957 -1150)" href="#confetti5"/>
+        <use transform="matrix(34.77 0 0 34.77 3797 -2775)" href="#confetti3"/>
+        <use transform="matrix(19.52 0 0 19.52 5190 -863.5)" href="#confetti1"/>
+        <use transform="matrix(33.67 0 0 33.67 4059 -2695)" href="#confetti3"/>
+        <use transform="matrix(21.04 0 0 21.04 5262 -1224)" href="#confetti2"/>
+        <use transform="matrix(20.58 0 0 20.58 5631 -1537)" href="#confetti5"/>
+        <use transform="matrix(21.95 0 0 21.95 5570 -1908)" href="#confetti4"/>
+        <use transform="matrix(37.34 0 0 37.34 4059 -3540)" href="#confetti2"/>
+        <use transform="matrix(29.26 0 0 29.26 4894 -2553)" href="#confetti1"/>
+        <use transform="matrix(28.27 0 0 28.27 5355 -3251)" href="#confetti5"/>
+        <use transform="matrix(29.28 0 0 29.28 5110 -3122)" href="#confetti3"/>
+        <use transform="matrix(26.38 0 0 26.38 5710 -2777)" href="#confetti2"/>
+        <use transform="matrix(22.96 0 0 22.96 5905 -2404)" href="#confetti1"/>
+        <use transform="matrix(25.16 0 0 25.16 5743 -2658)" href="#confetti1"/>
+        <use transform="matrix(34.75 0 0 34.75 5215 -3847)" href="#confetti1"/>
+        <use transform="matrix(34.68 0 0 34.68 5194 -3323)" href="#confetti3"/>
+        <use transform="matrix(24.54 0 0 24.54 5926 -2050)" href="#confetti5"/>
+        <use transform="matrix(30.01 0 0 30.01 5450 -2338)" href="#confetti3"/>
+        <use transform="matrix(29.14 0 0 29.14 5372 -1660)" href="#confetti3"/>
+        <use transform="matrix(27.74 0 0 27.74 5699 -1533)" href="#confetti1"/>
+        <use transform="matrix(29.53 0 0 29.53 5050 -1603)" href="#confetti3"/>
+        <use transform="matrix(32.38 0 0 32.38 4556 -1763)" href="#confetti3"/>
+        <use transform="matrix(31.78 0 0 31.78 4700 -1753)" href="#confetti5"/>
+        <use transform="matrix(32.83 0 0 32.83 4794 -1741)" href="#confetti1"/>
+        <use transform="matrix(30.85 0 0 30.85 4406 -1500)" href="#confetti4"/>
+        <use transform="matrix(19.98 0 0 19.98 5287 -253.7)" href="#confetti3"/>
+        <use transform="matrix(21.02 0 0 21.02 5252 -392)" href="#confetti1"/>
+        <use transform="matrix(28.65 0 0 28.65 4299 -1498)" href="#confetti4"/>
+        <use transform="matrix(37.42 0 0 37.42 3483 -2606)" href="#confetti3"/>
+        <use transform="matrix(27.62 0 0 27.62 4366 -1458)" href="#confetti1"/>
+        <use transform="matrix(27.18 0 0 27.18 4446 -1349)" href="#confetti5"/>
+        <use transform="matrix(24.67 0 0 24.67 4477 -1131)" href="#confetti4"/>
+        <use transform="matrix(24.11 0 0 24.11 4599 -650.4)" href="#confetti1"/>
+        <use transform="matrix(31.78 0 0 31.78 3554 -1864)" href="#confetti4"/>
+        <use transform="matrix(34.27 0 0 34.27 3604 -2054)" href="#confetti2"/>
+        <use transform="matrix(24.17 0 0 24.17 4245 -782.5)" href="#confetti5"/>
+        <use transform="matrix(17.28 0 0 17.28 5324 122.2)" href="#confetti4"/>
+        <use transform="matrix(32.44 0 0 32.44 3602 -1974)" href="#confetti3"/>
+        <use transform="matrix(13.54 0 0 13.54 5071 .8422)" href="#confetti4"/>
+        <use transform="matrix(16.8 0 0 16.8 4876 47)" href="#confetti2"/>
+        <use transform="matrix(16.23 0 0 16.23 4360 -239)" href="#confetti2"/>
+        <use transform="matrix(31.24 0 0 31.24 3101 -1743)" href="#confetti2"/>
+        <use transform="matrix(18 0 0 18 4088 -559.7)" href="#confetti5"/>
+        <use transform="matrix(24.46 0 0 24.46 3127 -1557)" href="#confetti3"/>
+        <use transform="matrix(28.13 0 0 28.13 2957 -1844)" href="#confetti5"/>
+        <use transform="matrix(15.02 0 0 15.02 3973 -722.9)" href="#confetti4"/>
+        <use transform="matrix(26.75 0 0 26.75 2809 -1821)" href="#confetti3"/>
+        <use transform="matrix(27.1 0 0 27.1 3539 -2042)" href="#confetti5"/>
+        <use transform="matrix(10.86 0 0 10.86 4770 -334.9)" href="#confetti2"/>
+        <use transform="matrix(14.22 0 0 14.22 4636 -360.2)" href="#confetti1"/>
+        <use transform="matrix(22.5 0 0 22.5 3731 -1607)" href="#confetti5"/>
+        <use transform="matrix(15.48 0 0 15.48 4723 -760.8)" href="#confetti3"/>
+        <use transform="matrix(20.65 0 0 20.65 3932 -1423)" href="#confetti1"/>
+        <use transform="matrix(34.15 0 0 34.15 3403 -3431)" href="#confetti4"/>
+        <use transform="matrix(25.97 0 0 25.97 4116 -2301)" href="#confetti3"/>
+        <use transform="matrix(33.18 0 0 33.18 3502 -2967)" href="#confetti5"/>
+        <use transform="matrix(28.75 0 0 28.75 3862 -2421)" href="#confetti2"/>
+        <use transform="matrix(27.26 0 0 27.26 3903 -2320)" href="#confetti1"/>
+        <use transform="matrix(33.18 0 0 33.18 3852 -3031)" href="#confetti3"/>
+        <use transform="matrix(30.87 0 0 30.87 3837 -2427)" href="#confetti5"/>
+        <use transform="matrix(20.71 0 0 20.71 5030 -1115)" href="#confetti5"/>
+        <use transform="matrix(31.72 0 0 31.72 3942 -2116)" href="#confetti4"/>
+        <use transform="matrix(35.88 0 0 35.88 3618 -2819)" href="#confetti3"/>
+        <use transform="matrix(15.16 0 0 15.16 5009 -76.03)" href="#confetti5"/>
+        <use transform="matrix(27.45 0 0 27.45 4186 -1697)" href="#confetti3"/>
+        <use transform="matrix(16.25 0 0 16.25 4621 -670.8)" href="#confetti5"/>
+        <use transform="matrix(25.8 0 0 25.8 3593 -1392)" href="#confetti4"/>
+        <use transform="matrix(11.8 0 0 11.8 4469 290.4)" href="#confetti1"/>
+        <use transform="matrix(18.15 0 0 18.15 2912 -453.8)" href="#confetti3"/>
+        <use transform="matrix(25.41 0 0 25.41 2455 -1700)" href="#confetti1"/>
+        <use transform="matrix(6.551 0 0 6.551 3844 517.5)" href="#confetti5"/>
+        <use transform="matrix(6.145 0 0 6.145 4004 741.7)" href="#confetti2"/>
+        <use transform="matrix(12.11 0 0 12.11 2947 -206.9)" href="#confetti5"/>
+        <use transform="matrix(13.89 0 0 13.89 3043 -628.5)" href="#confetti3"/>
+        <use transform="matrix(19.52 0 0 19.52 2442 -919.3)" href="#confetti5"/>
+        <use transform="matrix(13.49 0 0 13.49 3225 -384.1)" href="#confetti1"/>
+        <use transform="matrix(31.45 0 0 31.45 316.5 -2392)" href="#confetti6"/>
+        <use transform="matrix(17.57 0 0 17.57 1785 -1124)" href="#confetti3"/>
+        <use transform="matrix(24.61 0 0 24.61 921.1 -1432)" href="#confetti7"/>
+        <use transform="matrix(30.75 0 0 30.75 260.8 -2060)" href="#confetti6"/>
+        <use transform="matrix(11.73 0 0 11.73 1923 173.5)" href="#confetti4"/>
+        <use transform="matrix(18.55 0 0 18.55 1443 -566.1)" href="#confetti6"/>
+        <use transform="matrix(14.05 0 0 14.05 1865 -530.9)" href="#confetti5"/>
+        <use transform="matrix(4.087 0 0 4.087 2605 909.4)" href="#confetti4"/>
+        <use transform="matrix(34.56 0 0 34.56 -322.4 -2639)" href="#confetti6"/>
+        <use transform="matrix(31.32 0 0 31.32 328.8 -2538)" href="#confetti7"/>
+        <use transform="matrix(8.017 0 0 8.017 2049 232.3)" href="#confetti4"/>
+        <use transform="matrix(11.69 0 0 11.69 1729 -8.019)" href="#confetti3"/>
+        <use transform="matrix(13.92 0 0 13.92 2318 -211)" href="#confetti4"/>
+        <use transform="matrix(14.17 0 0 14.17 2326 -143)" href="#confetti3"/>
+        <use transform="matrix(4.128 0 0 4.128 3123 823.3)" href="#confetti2"/>
+        <use transform="matrix(10.54 0 0 10.54 2526 105.5)" href="#confetti1"/>
+        <use transform="matrix(11.42 0 0 11.42 2802 -270.8)" href="#confetti2"/>
+        <use transform="matrix(21.52 0 0 21.52 2414 -1312)" href="#confetti5"/>
+        <use transform="matrix(5.902 0 0 5.902 4356 1232)" href="#confetti4"/>
+        <use transform="matrix(21.33 0 0 21.33 3200 -944.1)" href="#confetti3"/>
+        <use transform="matrix(22.38 0 0 22.38 2917 -1187)" href="#confetti2"/>
+        <use transform="matrix(23.99 0 0 23.99 2738 -1312)" href="#confetti1"/>
+        <use transform="matrix(17.62 0 0 17.62 3988 -692.6)" href="#confetti5"/>
+        <use transform="matrix(14.62 0 0 14.62 4251 159.3)" href="#confetti4"/>
+        <use transform="matrix(13.39 0 0 13.39 4465 -78.91)" href="#confetti5"/>
+        <use transform="matrix(14.2 0 0 14.2 4142 -159.5)" href="#confetti3"/>
+        <use transform="matrix(20.6 0 0 20.6 3798 -600.3)" href="#confetti2"/>
+        <use transform="matrix(27.74 0 0 27.74 4376 -1084)" href="#confetti3"/>
+        <use transform="matrix(21.47 0 0 21.47 5671 -320.2)" href="#confetti4"/>
+        <use transform="matrix(26.96 0 0 26.96 5040 -958.7)" href="#confetti5"/>
+        <use transform="matrix(28.52 0 0 28.52 5355 -1329)" href="#confetti4"/>
+        <use transform="matrix(22.09 0 0 22.09 5833 -580.5)" href="#confetti1"/>
+        <use transform="matrix(30.97 0 0 30.97 5184 -2244)" href="#confetti3"/>
+        <use transform="matrix(25.47 0 0 25.47 5357 -1226)" href="#confetti2"/>
+        <use transform="matrix(25.97 0 0 25.97 5485 -1084)" href="#confetti1"/>
+        <use transform="matrix(26.48 0 0 26.48 5852 -2248)" href="#confetti2"/>
+        <use transform="matrix(23.51 0 0 23.51 5998 -2223)" href="#confetti5"/>
+        <use transform="matrix(34.58 0 0 34.58 4797 -3806)" href="#confetti4"/>
+        <use transform="matrix(34.52 0 0 34.52 4707 -3583)" href="#confetti3"/>
+        <use transform="matrix(35.03 0 0 35.03 4869 -3622)" href="#confetti3"/>
+        <use transform="matrix(32.64 0 0 32.64 5017 -2600)" href="#confetti3"/>
+        <use transform="matrix(34.68 0 0 34.68 4594 -2549)" href="#confetti5"/>
+        <use transform="matrix(23.74 0 0 23.74 5817 -1594)" href="#confetti1"/>
+        <use transform="matrix(34.6 0 0 34.6 4687 -2823)" href="#confetti1"/>
+        <use transform="matrix(28.15 0 0 28.15 4396 -2077)" href="#confetti4"/>
+        <use transform="matrix(24.15 0 0 24.15 4910 -1287)" href="#confetti2"/>
+        <use transform="matrix(25.04 0 0 25.04 4323 -1471)" href="#confetti5"/>
+        <use transform="matrix(28.32 0 0 28.32 3967 -2326)" href="#confetti2"/>
+        <use transform="matrix(31.92 0 0 31.92 3834 -2237)" href="#confetti1"/>
+        <use transform="matrix(33.65 0 0 33.65 3205 -2363)" href="#confetti4"/>
+        <use transform="matrix(17.25 0 0 17.25 4615 -348.3)" href="#confetti5"/>
+        <use transform="matrix(29.2 0 0 29.2 3876 -1996)" href="#confetti2"/>
+        <use transform="matrix(31.9 0 0 31.9 3393 -2413)" href="#confetti1"/>
+        <use transform="matrix(14.38 0 0 14.38 5034 -188.1)" href="#confetti4"/>
+        <use transform="matrix(21.25 0 0 21.25 4144 -902.4)" href="#confetti2"/>
+        <use transform="matrix(12.43 0 0 12.43 4769 530.1)" href="#confetti4"/>
+        <use transform="matrix(13.96 0 0 13.96 4765 498.5)" href="#confetti2"/>
+        <use transform="matrix(24.46 0 0 24.46 3968 -1095)" href="#confetti1"/>
+        <use transform="matrix(30.54 0 0 30.54 3366 -1658)" href="#confetti4"/>
+        <use transform="matrix(19.09 0 0 19.09 3721 -92.51)" href="#confetti3"/>
+    </g>
+
+    <g fill="none" filter="url(#glow)" stroke-width="16">
+        <path stroke="#61f2ff" id="inner_circle_bottom" d="m2186 1089s381.4-133.9 383.7-124.8c82.89 335-106.2 682.1-439.6 790.4-333.2 108.3-689.9-61.04-820-380.4-3.64-8.92 84.63-31.17 84.63-31.17"/>
+        <path stroke="#f25e95" id="outer_circle_bottom" d="m2183 1038s439.5-146.6 441.5-139.6c111.3 380.2-99.43 782.5-478.8 905.7s-786.2-78.33-919.7-451.4c-2.47-6.9 167.4-59.8 167.4-59.8"/>
+        <path stroke="#f25e95" id="title_year" d="m2128 1044c-1.111.031-2.22.2127-3.291.5605-6.852 2.226-9.945 9.543-7.338 16.27l1.855 5.711c12.12 37.3-6.229 70.2-27.34 99.79-12.67 18-27.62 36.75-36.65 59.46-7.224 17.92-9.642 36.38-3.582 55.03 11.87 36.54 53.02 51.79 88.04 40.41l.7617-.248c31.59-10.27 56.37-38.94 54.1-73.13-.3231-7.47-8.002-12.97-15.62-10.5-5.329 1.732-8.785 6.642-8.195 12.34 1.35 22.29-16.02 42.66-36.57 49.34l-.7617.2482c-22.46 7.297-50.49-1.268-58.29-25.25-4.205-12.94-1.702-25.96 3.076-38.46 7.224-17.92 20.9-35.41 34.21-54.04 26.1-36.26 45.38-75.35 30.66-120.6l-.6192-1.904c-.8658-2.664-1.732-5.328-2.978-7.869-1.817-4.539-6.656-7.262-11.47-7.129zm-29.36 9.584c-1.189.027-2.406.2309-3.619.6251l-97.45 31.66c-6.471 2.103-9.812 8.66-7.709 15.13 2.103 6.471 8.66 9.812 15.13 7.709l97.45-31.66c6.471-2.103 9.812-8.658 7.709-15.13-1.708-5.258-6.358-8.45-11.51-8.334zm-229.7 75.77c-7.882.3515-15.74 1.747-23.35 4.221l-2.285.7422c-31.73 11.15-52.44 38.08-60.02 70.43-6.806 29.57-2.223 59.22 6.558 86.25 12.99 39.97 35.24 76.09 74.09 94.61 3.026 1.542 6.062 1.818 8.346 1.076 3.045-.9895 5.214-3.378 6.766-7.67 2.713-7.194.7253-12.02-6.84-15.87-30.76-15.68-48.38-46.57-58.77-78.54-11.13-34.26-14.99-75.93 9.41-105.7 7.538-9.183 17.72-16.7 29.02-20.79l1.522-.4942c23.6-7.668 48.36-1.406 67.61 13.8 18.75 14.95 32.87 38.98 42.69 62.72l2.35 7.234c10.88 33.5 14.12 74.53-9.268 103.6-8.946 11.32-20.14 18.33-30.29 22.05l-1.523.4942c-5.71 1.855-12.05 3.072-18.25 3.404-2.531-.019-4.435.6003-6.338 1.219-4.949 1.608-7.757 4.624-9.441 9.801-2.465 7.955.5421 12.03 8.26 12.47 10.63.3338 21.65-.7224 32.31-4.186l2.285-.7402c32.87-11.52 53.97-39.84 60.8-73.21 5.255-25.27 2.317-55.04-6.959-83.59-14.84-45.68-45.77-90.34-95.18-101.2-7.708-1.704-15.61-2.396-23.5-2.045zm-170.3 54.16c-1.111.031-2.22.2128-3.291.5607-6.852 2.226-9.945 9.543-7.338 16.27l1.856 5.711c12.12 37.3-6.229 70.2-27.34 99.79-12.67 18-27.62 36.75-36.65 59.46-7.224 17.92-9.642 36.38-3.582 55.03 11.87 36.54 53.02 51.79 88.04 40.41l.7597-.2481c31.59-10.27 56.37-38.94 54.1-73.13-.323-7.47-8.004-12.97-15.62-10.5-5.329 1.732-8.783 6.641-8.193 12.34 1.35 22.29-16.02 42.66-36.57 49.34l-.7617.248c-22.46 7.297-50.49-1.268-58.29-25.25-4.205-12.94-1.702-25.96 3.076-38.46 7.224-17.92 20.9-35.41 34.2-54.04 26.1-36.26 45.38-75.35 30.66-120.6l-.6172-1.904c-.8658-2.665-1.732-5.328-2.978-7.869-1.817-4.539-6.656-7.262-11.47-7.129zm-29.36 9.584c-1.189.027-2.406.2307-3.619.6249l-97.45 31.66c-6.471 2.103-9.812 8.66-7.709 15.13 2.103 6.471 8.66 9.812 15.13 7.709l97.45-31.66c6.471-2.103 9.812-8.658 7.709-15.13-1.708-5.258-6.358-8.45-11.51-8.334zm-195.8 68.81c-12.27-.378-24.63 1.426-36.43 5.26-41.49 13.48-66.24 55.19-55.42 97.55l1.361 4.188c4.824 14.85 14.35 27.32 26.42 37.29 25.81 18.55 52.49 21.66 82.18 12.02 3.045-.9895 6.09-1.978 9.012-3.348 14.22-5.461 27.95-13.71 40.05-23.11 3.95-3.388 5.635-8.563 4.15-13.13-2.226-6.852-9.544-9.945-15.25-8.09-1.523.4948-2.54 1.246-3.939 2.121-10.44 8.021-22.9 15.02-34.83 19.73l-6.852 2.226c-19.79 6.432-43.34 6.506-60.07-7.418-7.803-5.882-15.19-16.95-18.15-26.09l-.2481-.7617c-7.611-31.19 9.835-61.69 40.16-71.97 10.1-3.282 26.6-4.158 37.37-2.309 5.722 1.067 11.32 2.968 16.66 5.377 2.902 1.161 5.939 1.438 8.604.5723 3.045-.9895 5.595-3.501 7.137-6.527 1.161-2.902 1.438-5.939.5722-8.604-.9894-3.045-3.501-5.595-6.527-7.137-11.48-4.897-23.68-7.458-35.95-7.836zm69.95 140.9c-1.189.027-2.406.2288-3.619.6231-6.471 2.103-9.812 8.66-7.709 15.13l25.97 79.94c2.103 6.471 8.66 9.814 15.13 7.711 6.471-2.103 9.812-8.66 7.709-15.13l-25.97-79.94c-1.708-5.258-6.358-8.448-11.51-8.332zm-6.764 90.57c-1.19.027-2.406.2307-3.619.625l-71.95 23.37c-6.471 2.103-9.812 8.66-7.709 15.13 2.103 6.471 8.66 9.812 15.13 7.709l71.95-23.38c6.471-2.103 9.812-8.66 7.709-15.13-1.708-5.258-6.358-8.45-11.51-8.334z"/>
+        <path stroke="#61f2ff" id="outer_circle_upper" d="m1663 1119s-463.8 153-465.8 145.9c-111.3-380.2 98.29-786 477.6-909.2 379.3-123.2 786.2 78.33 919.7 451.4 2.47 6.9-258.8 92.58-258.8 92.58"/>
+        <path stroke="#f25e95" id="inner_circle_upper" d="m1629 1076s-376 126.7-378.5 116.3c-80.6-333.9 108.4-678.8 440.6-786.8 332.6-108.1 688.8 60.49 819.4 378.8 3.87 9.43-189.4 69.81-189.4 69.81"/>
+        <path stroke="#61f2ff" id="title_why" d="m2386 602.9c-1.077.0171-2.128.1812-3.127.5059-3.045.9895-5.597 3.501-7.139 6.527l-48.05 109.9c-1.161 2.903-1.436 5.939-.5703 8.604.9895 3.045 3.501 5.595 6.527 7.137 2.903 1.161 5.939 1.438 8.604.5723 3.046-.9895 5.597-3.501 7.139-6.527l48.05-109.9c1.161-2.903 1.438-5.939.5722-8.604-.9895-3.045-3.501-5.597-6.527-7.139-1.814-.7258-3.682-1.105-5.477-1.076zm-207.8 67.67c-1.228-.0301-2.44.127-3.582.4981-2.665.8658-4.957 2.874-6.623 5.519-1.542 3.026-2.076 6.566-1.086 9.611.8658 2.665 2.874 4.957 5.52 6.623l140.8 79.68c3.026 1.542 6.566 2.075 9.611 1.086 2.665-.8658 4.959-2.874 6.625-5.519 1.542-3.026 2.074-6.566 1.084-9.611-.8658-2.665-2.872-4.959-5.517-6.625l-140.8-79.67c-1.891-.9637-3.985-1.534-6.031-1.584zm-79.52 25.72c-1.19.0268-2.408.2307-3.621.625-6.472 2.103-9.812 8.659-7.709 15.13l79.16 243.6c2.103 6.472 8.659 9.812 15.13 7.709 6.472-2.103 9.812-8.659 7.709-15.13l-79.16-243.6c-1.708-5.258-6.357-8.45-11.51-8.334zm-166 53.93c-1.189.0268-2.406.2288-3.619.6231-6.472 2.103-9.814 8.659-7.711 15.13l79.16 243.6c2.103 6.472 8.659 9.814 15.13 7.711 6.472-2.103 9.814-8.659 7.711-15.13l-79.16-243.6c-1.708-5.258-6.357-8.45-11.51-8.334zm-87.72 28.15c-1.274.0118-2.601.2214-3.957.6621-4.568 1.484-7.766 5.892-8.186 11.08l-8.18 193.7c-.01 1.266.1048 2.911.5996 4.434 1.855 5.71 8.279 9.936 15.51 7.586 4.568-1.484 7.766-5.89 8.186-11.08l8.18-193.7c.01-1.266-.1049-2.913-.5997-4.436-1.507-4.64-6.032-8.299-11.55-8.248zm486.7 10.57c-1.19.0268-2.406.2307-3.619.625-6.472 2.103-9.812 8.659-7.709 15.13l29.69 91.36c2.103 6.472 8.659 9.812 15.13 7.709 6.472-2.103 9.812-8.659 7.709-15.13l-29.69-91.36c-1.708-5.258-6.357-8.45-11.51-8.334zm-597.4 25.42c-1.274.0119-2.601.2215-3.957.6622-4.568 1.484-7.766 5.892-8.186 11.08l-8.637 204c-.01 1.266.1029 2.913.5977 4.436 1.855 5.71 8.279 9.936 15.51 7.586 4.568-1.484 7.766-5.892 8.186-11.08l8.637-204c.01-1.266-.1028-2.913-.5976-4.436-1.508-4.64-6.032-8.299-11.55-8.248zm369.1 4.996c-1.19.0268-2.406.2288-3.619.6231l-101.3 32.9c-6.472 2.103-9.812 8.659-7.709 15.13 2.103 6.471 8.659 9.812 15.13 7.709l101.3-32.9c6.472-2.103 9.814-8.659 7.711-15.13-1.708-5.258-6.357-8.448-11.51-8.332zm-550 53.76c-1.181-.011-2.362.1621-3.504.5332-6.852 2.226-9.945 9.546-8.09 15.26.4948 1.523 1.246 2.54 2.121 3.939l169.4 214.3c3.388 3.95 8.565 5.635 13.13 4.15 6.852-2.226 9.947-9.544 8.092-15.25-.4948-1.523-1.248-2.542-2.123-3.942l-169.4-214.3c-2.541-2.962-6.087-4.651-9.629-4.684zm210.8 94.32c-1.169.0248-2.342.2227-3.484.5938-6.852 2.226-9.184 9.298-7.328 15.01.3711 1.142 1.246 2.54 1.998 3.559l69.1 84.45c3.388 3.95 8.442 5.254 13.01 3.77 6.852-2.226 9.186-9.298 7.33-15.01-.371-1.142-1.248-2.54-2-3.559l-69.1-84.45c-2.541-2.962-6.018-4.437-9.525-4.363z"/>
+        <path stroke="#fffb96" id="belt_bottom" d="m1142 874.5c-148.2-29.29-222.5-30.98-234.8 1.7-27.54 73.3 373.4 291.8 895.6 487.9 522.2 196.2 967.8 295.8 995.3 222.5 12.32-32.78-32.88-94.95-164.5-170.8"/>
+        <path stroke="#fffb96" id="belt_upper" d="m1155 827.5c-148.2-29.29-211.6-32.25-223.8.43-27.54 73.3 373.4 291.8 895.6 487.9 522.2 196.2 967.8 295.8 995.3 222.5 12.32-32.78-37.93-94.61-169.6-170.5"/>
+    </g>
+</svg>
